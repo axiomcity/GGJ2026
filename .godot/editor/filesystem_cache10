@@ -1,0 +1,12 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1769857627
+icon.svg::CompressedTexture2D::9169913690385924455::1769806199::1769807858::1::::<><><>0<>0<>319dc9300d25c3955e1c1e050c6088c3<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1769806199::0::1::::<><><>0<>0<><>::
+::res://assets/::1769855382
+::res://assets/music/::1769855382
+::res://assets/sprites/::1769855440
+char_blue.png::CompressedTexture2D::5496639725351894831::1769855438::1769855440::1::::<><><>0<>0<>04eb6d092ad57632e8fc64cea566eb58<>res://.godot/imported/char_blue.png-c5bbbf32dda5690ba66e96a1f2883d2a.ctex::
+::res://scenes/::1769857461
+game.tscn::PackedScene::1217239268021334876::1769857461::0::1::::<><><>0<>0<><>::uid://dm6qoe57l87ub::::res://scenes/player.tscn
+player.tscn::PackedScene::8066520616017977825::1769857399::0::1::::<><><>0<>0<><>::uid://ckku4akp2n27l::::res://assets/sprites/char_blue.png
+::res://scripts/::1769854887
