@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://rlv0umd7rnq7"]
 
 [ext_resource type="PackedScene" uid="uid://dm6qoe57l87ub" path="res://scenes/player.tscn" id="1_uwrxv"]
-[ext_resource type="Script" uid="uid://bhxqcbh3ynv3e" path="res://scenes/ground.gd" id="2_lnu2h"]
 [ext_resource type="Texture2D" uid="uid://d4e6mnqtkbw38" path="res://assets/Background_0.png" id="3_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://dqt0buoeb30f" path="res://assets/Tiles.png" id="4_lbhrr"]
 
@@ -150,7 +149,6 @@ physics_material_override = SubResource("PhysicsMaterial_uwrxv")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ground2d" unique_id=152204288]
 position = Vector2(81.50001, 7)
 shape = SubResource("RectangleShape2D_uwrxv")
-script = ExtResource("2_lnu2h")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=741344202]
 z_index = 1

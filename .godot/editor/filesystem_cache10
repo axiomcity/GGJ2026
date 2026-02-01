@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769903112
+::res://::1769937407
 icon.svg::CompressedTexture2D::9169913690385924455::1769860409::1769860427::1::::<><><>0<>0<>319dc9300d25c3955e1c1e050c6088c3<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1769860401::0::1::::<><><>0<>0<><>::
 ::res://assets/::1769892337
@@ -7,10 +7,10 @@ Background_0.png::CompressedTexture2D::9204900392298225209::1769889377::17698909
 Tiles.png::CompressedTexture2D::244794926750191055::1570034050::1769892337::1::::<><><>0<>0<>afa0701fe17dc24b45064f8ea8a5ee6d<>res://.godot/imported/Tiles.png-606650b3698afd99ea52e71152f0494f.ctex::
 ::res://assets/sprites/::1769885699
 char_blue.png::CompressedTexture2D::5496639725351894831::1769860409::1769885699::1::::<><><>0<>0<>04eb6d092ad57632e8fc64cea566eb58<>res://.godot/imported/char_blue.png-c5bbbf32dda5690ba66e96a1f2883d2a.ctex::
-::res://scenes/::1769902356
-game.tscn::PackedScene::1217239268021334876::1769894679::0::1::::<><><>0<>0<><>::uid://dm6qoe57l87ub::::res://scenes/player.tscn<>uid://bhxqcbh3ynv3e::::res://scenes/ground.gd<>uid://d4e6mnqtkbw38::::res://assets/Background_0.png<>uid://dqt0buoeb30f::::res://assets/Tiles.png
-ground.gd::GDScript::2926198385616556984::1769892265::0::1::::<>CollisionShape2D<><>0<>0<><>::
-player.tscn::PackedScene::8066520616017977825::1769902356::0::1::::<><><>0<>0<><>::uid://ckku4akp2n27l::::res://assets/sprites/char_blue.png<>uid://cnwgkeu1jsguw::::res://scripts/player_anims.gd
-::res://scripts/::1769903094
+::res://scenes/::1769906875
+game.tscn::PackedScene::1217239268021334876::1769904513::0::1::::<><><>0<>0<><>::uid://dm6qoe57l87ub::::res://scenes/player.tscn<>uid://d4e6mnqtkbw38::::res://assets/Background_0.png<>uid://dqt0buoeb30f::::res://assets/Tiles.png
+ground.gd::GDScript::717016302294691899::1769904415::0::1::::<>RefCounted<><>0<>0<><>::
+player.tscn::PackedScene::8066520616017977825::1769906875::0::1::::<><><>0<>0<><>::uid://ckku4akp2n27l::::res://assets/sprites/char_blue.png<>uid://cnwgkeu1jsguw::::res://scripts/player_anims.gd
+::res://scripts/::1769906875
 player.gd::GDScript::3212242389080032157::1769860409::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player_anims.gd::GDScript::5731095047349137974::1769903094::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player_anims.gd::GDScript::5731095047349137974::1769906875::0::1::::<>CharacterBody2D<><>0<>0<><>::

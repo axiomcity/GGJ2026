@@ -1,2 +1,0 @@
-﻿37545
-/home/david/Desktop/Godot_install/Godot_v4.6-stable_mono_linux.x86_64
