@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dm6qoe57l87ub"]
 
 [ext_resource type="Texture2D" uid="uid://ckku4akp2n27l" path="res://assets/sprites/char_blue.png" id="1_3vyb7"]
-[ext_resource type="Script" uid="uid://cnwgkeu1jsguw" path="res://scenes/player_anims.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://cnwgkeu1jsguw" path="res://scripts/player_anims.gd" id="1_g2els"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_smehm"]
 atlas = ExtResource("1_3vyb7")
@@ -216,7 +216,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_jej6c")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack",
 "speed": 10.0
 }, {
@@ -362,7 +362,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_u2ulf")
 }],
-"loop": true,
+"loop": false,
 "name": &"walk",
 "speed": 10.0
 }]
@@ -376,11 +376,9 @@ script = ExtResource("1_g2els")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1251204547]
 position = Vector2(3, -28)
 sprite_frames = SubResource("SpriteFrames_smehm")
-animation = &"idle"
+animation = &"walk"
 autoplay = "idle"
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=970205979]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1551093051]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1551093051]
 position = Vector2(0, -15)
 shape = SubResource("CapsuleShape2D_g2els")

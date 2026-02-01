@@ -1,23 +1,30 @@
 extends CharacterBody2D
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+const SPEED = 150.0
+const JUMP_VELOCITY = -300.0
 @onready var animation = $AnimatedSprite2D
 
-func _ready():
-	printing.call()
-
-#func _process(delta):
-#	print("Refreshing...")
-
+#func _ready():
+#	printing.call()
+	
 func printing():
 	var variable = "ABC_BCA"
 	print("jean michel")
 	print(1, 2, 3, variable)
 
-# func _physics_process(delta: float) -> void:
+func _input(event):
+	# Vérifiez si l'événement est un clic de souris
+	if event is InputEventMouseButton:
+		if event.button_index == MouseButton.MOUSE_BUTTON_LEFT and event.pressed:
+			print("Attack")
+			animation.play("attack")
+		
+	
+#func _physics_process(delta: float) -> void:
 func _process(delta: float) -> void:
 	# Add the gravity.
-	if not is_on_floor(): velocity += get_gravity() * delta
+	if not is_on_floor(): 
+		velocity += get_gravity() * delta
+		animation.play("idle")
 	# JUMP
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
@@ -34,14 +41,9 @@ func _process(delta: float) -> void:
 	if direction:
 		velocity.x = direction * SPEED
 	else:
-		animation.play("idle")
 		velocity.x = 0
-
-	# attack
-	var attack = Input.is_action_pressed("ui_left")
-	
-	# hit
-	var hit = Input.is_action_pressed("ui_right")
-
+		if not animation.is_playing():
+			animation.play("idle")
+	pass
 
 	move_and_slide()
